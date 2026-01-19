@@ -135,7 +135,7 @@ header>div>nav>ul>li{
 /* Main */
 
 main>#Section1{
-    background-image: url(../img/Malmaison.jpg);
+    background-image: url(../img/Locaux/Malmaison.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     
@@ -278,7 +278,6 @@ main>#Section3>div>article>p{
 
 main>#Section4{
     margin-top: 60px;
-    margin-bottom: 60px;
     background-color: var(--bleu);
     padding: 60px;
 }
