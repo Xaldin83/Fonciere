@@ -47,22 +47,33 @@ a, button{
 
 /* Classe pour la couleur de texte */
 
-.Noir2Bleu:hover{
-    color: var(--bleu);
-}
-
-.Bleu2Noir:hover{
+.Noir2Bleu{
     color: var(--noir);
+    &:hover{
+        color: var(--bleu);
+    }
+}
+.Bleu2Noir{
+    color: var(--bleu);
+    &:hover{
+        color: var(--noir);
+    }
 }
 
-.Blanc2Gris:hover{
-    color: var(--gris);
+.Blanc2Gris{
+    color: var(--blanc);
+    &:hover{
+        color: var(--gris);
+    }
 }
 
 /* Classe pour les backgrounds */
 
-.BackgroundBlanc2Gris:hover{
-    background-color: var(--gris);
+.BackgroundBlanc2Gris{
+    background-color: var(--blanc);
+    &:hover{
+        background-color: var(--gris);
+    }
 }
 
 /* Body */
@@ -115,10 +126,12 @@ main>#Section1{
     background-image: url(../img/Malmaison.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 700px;
+    
     background-position: 34% 48%;
+    background-attachment:fixed;
     display: flex;
     align-items: center;
+    height: 700px;
 }
 
 main>#Section1>article{
@@ -129,7 +142,7 @@ main>#Section1>article{
     text-align: center;
 }
 
-main>#Section1>article h1,h2{
+main>#Section1>article>h1,main>#Section1>article>h2{
     color: var(--blanc);
 }
 
@@ -149,8 +162,6 @@ main>#Section1>article>h2{
 }
 
 main>#Section1>article>a{
-    color: var(--bleu);
-    background-color: var(--blanc);
     border: 1px solid var(--bleu);
     padding: 13px 24px;
     font-size: 16px;
