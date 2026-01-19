@@ -1,25 +1,62 @@
 /* VARIABLES */
 
 :root{
+    /* Couleurs */
     --noir:#000;
     --bleu:#276a7c;
     --blanc:#fff;
     --gris:#859399;
+
+    /* Font Family */
     --OpenSans: "Open Sans", sans-serif;
     --Monserrat: "Montserrat", sans-serif;
     --Roboto: "Roboto", sans-serif;
+
+    /* Text Transform */
+    --Uppercase:uppercase;
+
+    /* Font Weight */
+
+    --W400: 400;
 }
 
 /* GENERAL */
 
 *{
     margin: 0;
+    text-decoration: none;
+    color: var(--noir);
 }
 
 
 /* Body */
 
 /* Header */
-header>div>a{
+
+header>div{
+    max-width: 1440px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+header>div>a>img{
     max-width: 200px;
+}
+
+header>div>nav{
+    max-width: 1128px;
+    margin: auto;
+}
+
+header>div>nav>ul{
+    list-style-type: none;
+    display: flex;
+    gap: 102px;
+}
+
+header>div>nav>ul>li{
+    font-size: 16px;
+    text-transform: var(--Uppercase);
+    font-weight: var(--W400);
 }
