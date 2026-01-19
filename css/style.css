@@ -28,6 +28,21 @@
     color: var(--noir);
 }
 
+a{
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+/* Classe */
+.Noir2Bleu:hover{
+    color: var(--bleu);
+}
+
+.Bleur2Noir:hover{
+    color: var(--noir);
+}
 
 /* Body */
 
@@ -42,6 +57,10 @@ header>div{
 }
 header>div>a>img{
     max-width: 200px;
+}
+
+header>div>.fa-bars{
+    display: none;
 }
 
 header>div>nav{
@@ -60,3 +79,4 @@ header>div>nav>ul>li{
     text-transform: var(--Uppercase);
     font-weight: var(--W400);
 }
+
