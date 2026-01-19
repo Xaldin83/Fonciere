@@ -1,0 +1,25 @@
+/* VARIABLES */
+
+:root{
+    --noir:#000;
+    --bleu:#276a7c;
+    --blanc:#fff;
+    --gris:#859399;
+    --OpenSans: "Open Sans", sans-serif;
+    --Monserrat: "Montserrat", sans-serif;
+    --Roboto: "Roboto", sans-serif;
+}
+
+/* GENERAL */
+
+*{
+    margin: 0;
+}
+
+
+/* Body */
+
+/* Header */
+header>div>a{
+    max-width: 200px;
+}
