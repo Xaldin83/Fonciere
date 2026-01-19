@@ -4,6 +4,7 @@
     /* Couleurs */
     --noir:#000;
     --bleu:#276a7c;
+    --bleuTransparent:#27697CE3;
     --blanc:#fff;
     --gris:#859399;
 
@@ -17,7 +18,10 @@
 
     /* Font Weight */
 
-    --W400: 400;
+    --W400:400;
+    --W500:500;
+    --W600:600;
+    --W700:700;
 }
 
 /* GENERAL */
@@ -28,7 +32,7 @@
     color: var(--noir);
 }
 
-a{
+a, button{
     transition: all 0.3s ease-in-out;
     &:hover{
         transition: all 0.3s ease-in-out;
@@ -45,12 +49,16 @@ a{
     color: var(--bleu);
 }
 
-.Bleur2Noir:hover{
+.Bleu2Noir:hover{
     color: var(--noir);
 }
 
 .Blanc2Gris:hover{
     color: var(--gris);
+}
+
+.BackgroundBlanc2Gris:hover{
+    background-color: var(--gris);
 }
 
 /* Body */
@@ -98,6 +106,47 @@ header>div>nav>ul>li{
 }
 
 /* Main */
+
+main>#Section1{
+    background-image: url(../img/Malmaison.jpg);
+}
+
+main>#Section1>article{
+    margin: auto;
+    max-width: 570px;
+    background-color: var(--bleuTransparent);
+    padding: 15px;
+    text-align: center;
+}
+
+main>#Section1>article h1,h2{
+    color: var(--blanc);
+}
+
+main>#Section1>article>h1{
+    font-size: 46px;
+    font-family: var(--Monserrat);
+    font-weight: var(--W700);
+    text-transform: var(--Uppercase);
+}
+
+main>#Section1>article>h2{
+    font-size: 18px;
+    font-family: var(--Monserrat);
+    font-weight: var(--W600);
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+main>#Section1>article>a{
+    color: var(--bleu);
+    background-color: var(--blanc);
+    border: 1px solid var(--bleu);
+    padding: 13px 24px;
+    font-size: 16px;
+    font-family: var(--Roboto);
+    font-weight: var(--W500);
+}
 
 
 
