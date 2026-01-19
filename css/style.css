@@ -39,6 +39,10 @@ a, button{
     }
 }
 
+input:focus, textarea:focus{
+    outline: none;
+}
+
 /* Classe */
 
 .Logo:hover{
@@ -138,7 +142,6 @@ main>#Section1{
     background-image: url(../img/Locaux/Malmaison.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    
     background-position: 34% 48%;
     background-attachment:fixed;
     display: flex;
@@ -292,7 +295,7 @@ main>#Section4>div{
 
 main>#Section4>div>#S4_div_Image{
     display: grid;
-    grid-template-columns: repeat(2,340px);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,226px);
     gap: 20px;
 }
@@ -306,6 +309,11 @@ main>#Section4>div>#S4_div_Image>img{
 main>#Section4>div>#S4_div_Image>#Terrasse{
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+main>#Section4>div>#S4_div_Texte{
+    display: flex;
+    flex-direction: column;
 }
 
 main>#Section4>div>#S4_div_Texte>article>*, main>#Section4>div>#S4_div_Texte>p{
@@ -370,7 +378,7 @@ main>#Section5>div>h3{
 
 main>#Section5>div>div{
     display: grid;
-    grid-template-columns:repeat(3,407px);
+    grid-template-columns:repeat(3,1fr);
     gap: 50px;
     justify-content: center;
     margin-bottom: 50px ;
@@ -393,6 +401,73 @@ main>#Section5>div>a{
     font-size: 16px;
     font-family: var(--OpenSans);
     font-weight: var(--W400);
+}
+
+main>#Section6{
+    margin-top: 60px;
+    background-color: var(--gris);
+}
+
+main>#Section6>div{
+    max-width: 680px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+main>#Section6>div>h2,main>#Section6>div>h3, main>#Section6>div>form>label{
+    color: var(--blanc);
+}
+
+main>#Section6>div>h2{
+    font-size: 20px;
+    font-family: var(--Monserrat);
+    font-weight: var(--W600);
+}
+
+main>#Section6>div>h3{
+    font-size: 30px;
+    font-family: var(--Monserrat);
+    font-weight: var(--W700);
+    text-transform: var(--Uppercase);
+    margin-bottom: 50px;
+}
+
+main>#Section6>div>form>div{
+    display: grid;
+    grid-template-columns: repeat(2,310px);
+    gap: 20px 30px;
+}
+
+main>#Section6>div>form>div *{
+    padding: 9px 17px;
+    border: 1px solid var(--bleu);
+}
+
+main>#Section6>div>form>div>#entreprise{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+main>#Section6>div>form>div>#textarea{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    resize: none;
+}
+
+main>#Section6>div>form>input{
+    margin-top: 20px;
+}
+main>#Section6>div>form>label{
+    font-size: 16px;
+    font-family: var(--OpenSans);
+    font-weight: var(--W400);   
+}
+
+main>#Section6>div>button{
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
 }
 
 /* Footer */
@@ -436,4 +511,66 @@ footer>div>p>a{
 
     header>div>.fa-bars{
         display: block;}
+}
+
+@media screen and (max-width:1024px){
+
+    main>#Section2>div{
+        grid-template-columns: 1fr;
+       gap: 40px;
+    }
+
+    main>#Section2>div *{
+        margin: auto;
+    }
+
+    main>#Section4>div{
+        grid-template-columns: 1fr;
+    }
+
+    main>#Section4>div *{
+        margin: auto;
+    }
+
+    main>#Section4>div>#S4_div_Image{
+        display: none;
+    }
+    
+    main>#Section5>div>div{
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (max-width:767px){
+
+    main>#Section2>div>article>div{
+        grid-template-columns: 1fr;
+    }
+    main>#Section2>div>article>div>hr{
+        display: none;
+    }
+
+    main>#Section2>div>img{
+        object-fit: contain;
+    }
+
+    main>#Section4{
+        padding: 10px;
+    }
+    main>#Section6>div>form>div{
+        grid-template-columns: 1fr;
+    }
+
+    main>#Section6>div>form>div>#entreprise,main>#Section6>div>form>div>#textarea{
+        grid-column-end: 2;
+    }
+}
+
+@media screen and (max-width:600px){
+    main>#Section1{
+    height: auto;
+    }
+    
 }
