@@ -45,6 +45,8 @@ a, button{
     max-width: 210px;
 }
 
+/* Classe pour la couleur de texte */
+
 .Noir2Bleu:hover{
     color: var(--bleu);
 }
@@ -56,6 +58,8 @@ a, button{
 .Blanc2Gris:hover{
     color: var(--gris);
 }
+
+/* Classe pour les backgrounds */
 
 .BackgroundBlanc2Gris:hover{
     background-color: var(--gris);
@@ -109,13 +113,19 @@ header>div>nav>ul>li{
 
 main>#Section1{
     background-image: url(../img/Malmaison.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+    background-position: 34% 48%;
+    display: flex;
+    align-items: center;
 }
 
 main>#Section1>article{
     margin: auto;
     max-width: 570px;
     background-color: var(--bleuTransparent);
-    padding: 15px;
+    padding: 15px 15px 30px 15px;
     text-align: center;
 }
 
@@ -146,6 +156,7 @@ main>#Section1>article>a{
     font-size: 16px;
     font-family: var(--Roboto);
     font-weight: var(--W500);
+    
 }
 
 
