@@ -36,6 +36,11 @@ a{
 }
 
 /* Classe */
+
+.Logo:hover{
+    max-width: 210px;
+}
+
 .Noir2Bleu:hover{
     color: var(--bleu);
 }
@@ -44,24 +49,35 @@ a{
     color: var(--noir);
 }
 
+.Blanc2Gris:hover{
+    color: var(--gris);
+}
+
 /* Body */
 
 /* Header */
 
 header>div{
     max-width: 1440px;
-    height: 120px;
+    padding: 12px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
-header>div>a>img{
+
+header>div>a{
     max-width: 200px;
+}
+
+header>div>a>img{
+    width: 100%;;
 }
 
 header>div>.fa-bars{
     display: none;
+    color: var(--bleu);
 }
 
 header>div>nav{
@@ -91,7 +107,6 @@ footer{
 footer>div{
     margin: auto;
     max-width: 1420px;
-    height: 42px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -106,6 +121,8 @@ footer>div>p{
     font-family: var(--Roboto);
     font-weight: var(--W400);
     font-size: 16px;
+    text-align: center;
+    padding: 12px;
 }
 
 footer>div>p>a{
@@ -114,3 +131,12 @@ footer>div>p>a{
 
 /* Responsive */
 
+@media screen and (max-width:1245px) {
+    /* 1245 est la plus grande taille où le header se chevauche si on ne met pas le burger menu */
+    header>div>nav{
+        display: none;
+    }    
+
+    header>div>.fa-bars{
+        display: block;}
+}
