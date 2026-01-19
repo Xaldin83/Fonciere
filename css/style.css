@@ -344,6 +344,55 @@ main>#Section4>div>#S4_div_Texte>a{
     font-weight: var(--W400);
 }
 
+
+main>#Section5>div{
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+}
+
+
+main>#Section5>div>h2{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: var(--Monserrat);
+    font-weight: var(--W600);
+}
+main>#Section5>div>h3{
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: var(--Monserrat);
+    font-weight: var(--W700);
+    text-transform: var(--Uppercase);
+}
+
+main>#Section5>div>div{
+    display: grid;
+    grid-template-columns:repeat(3,407px);
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 50px ;
+}
+
+main>#Section5>div>div>article>img{
+    width: 100%;
+}
+
+main>#Section5>div>div>article>p{
+    font-size: 16px;
+    font-family: var(--OpenSans);
+    font-weight: var(--W400);
+    text-transform: var(--Uppercase);
+    margin-top:30px ;
+}
+
+main>#Section5>div>div>a{
+    padding: 13px 25px;
+    font-size: 16px;
+    font-family: var(--OpenSans);
+    font-weight: var(--W400);
+}
+
 /* Footer */
 
 footer{
