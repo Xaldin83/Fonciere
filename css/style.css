@@ -96,6 +96,7 @@ input:focus, textarea:focus{
     &:hover{
         background-color: var(--bleu);
     }
+    
 }
 
 .BackgroundBlanc2Bleu{
