@@ -96,7 +96,7 @@ input:focus, textarea:focus{
     &:hover{
         background-color: var(--bleu);
     }
-    
+
 }
 
 .BackgroundBlanc2Bleu{
@@ -621,6 +621,10 @@ footer>div>p>a{
 @media screen and (max-width:600px){
     main>#Section1{
     height: auto;
+    }
+
+    main>#Section1>article{
+        padding: 0;
     }
     
 }
