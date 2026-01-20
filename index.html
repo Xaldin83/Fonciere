@@ -12,28 +12,30 @@
     <header>
         <div>
             <!-- Le logo est TOUJOURS un lien qui ramène à la page d'accueil -->
-            <a href="/index.html" class="Logo"><img src="./img/Logo.jpg" alt="Image du logo de Foncière Pagerie-Malmaison"></a>
+            <a href="/index.html" class="Logo"><img src="./img/Logo.jpg" alt="Image du logo de Foncière Pagerie-Malmaison" id="Logo"></a>
             <i class="fa-solid fa-bars"></i>
 
             <!-- La liste des menus du header est toujours un nav -->
             <nav>
                 <ul>
-                    <li><a href="./img/Technical_Difficulties.jpg" class="Noir2Bleu">rueil malmaison</a></li>
-                    <li><a href="./img/Technical_Difficulties.jpg" class="Noir2Bleu">bureaux à meaux</a></li>
-                    <li><a href="./img/Technical_Difficulties.jpg" class="Noir2Bleu">bureaux à louer</a></li>
-                    <li><a href="./img/Technical_Difficulties.jpg" class="Noir2Bleu">galerie</a></li>
-                    <li><a href="./img/Technical_Difficulties.jpg" class="Noir2Bleu">contact</a></li>
+                    <li><a href="./img/Technical_Difficulties.jpg" class="Noir2Blanc BackgroundBlanc2Bleu">rueil malmaison</a></li>
+                    <li><a href="./img/Technical_Difficulties.jpg" class="Noir2Blanc BackgroundBlanc2Bleu">bureaux à meaux</a></li>
+                    <li><a href="./img/Technical_Difficulties.jpg" class="Noir2Blanc BackgroundBlanc2Bleu">bureaux à louer</a></li>
+                    <li><a href="./img/Technical_Difficulties.jpg" class="Noir2Blanc BackgroundBlanc2Bleu">galerie</a></li>
+                    <li><a href="./img/Technical_Difficulties.jpg" class="Noir2Blanc BackgroundBlanc2Bleu">contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+        <a href="#Logo" id="Remonter"><i class="fa-solid fa-angle-up"></i></a>
+
         <section id="Section1">
             <article>
                 <h1>bureaux à  rueil malmaison</h1>
                 <h2>Locations de bureaux à destination des entreprises</h2>
-                <a href="#" class="Bleu2Noir BackgroundBlanc2Gris">Découvrez nos bureaux à louer</a>
+                <a href="#" class="Bleu2Blanc BackgroundBlanc2Bleu Scale">Découvrez nos bureaux à louer</a>
             </article>
         </section>
 
@@ -46,7 +48,7 @@
                         <hr>
                         <p>Foncière Pagerie Malmaison est une entreprise de location de bureaux professionnels située 16 avenue des Chateaupieds 92500 RUEIL-MALMAISON. Nos bureaux sont conçus pour répondre aux besoins des entreprises modernes et offrir un environnement de travail confortable et stimulant pour les professionnels. Avec un design épuré et une attention portée aux détails, nos locaux sont équipés pour répondre à vos exigences. Nous sommes convaincus que nos bureaux sont l’endroit idéal pour les entreprises ambitieuses et nous invitons tous les professionnels à venir visiter nos locaux pour découvrir l’expérience Foncière Pagerie Malmaison.</p>
                         <p></p>
-                        <a href="#" class="BackgroundBleu2Noir Blanc2Gris">En savoir plus sur Rueil Malmaison</a>
+                        <a href="#" class="BackgroundBleu2Blanc Blanc2Bleu Scale">En savoir plus sur Rueil Malmaison</a>
                     </div>
                         
 
@@ -60,15 +62,15 @@
         <section id="Section3">
             <div>
                 <article>
-                    <i class="fa-solid fa-business-time"></i>
+                    <img img src="./img/icon/business-time-solid-full.svg" alt="Icône" id="business-time" class="fa-solid">
                     <p>32 Bureaux loués</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-location-arrow"></i>
+                    <img src="./img/icon/location-arrow-solid-full.svg" alt="Icône" id="business-time" class="fa-solid">
                     <p>16 avenue des Chateaupieds <br><br>92500 RUEIL MALMAISON</p>
                 </article>
                 <article>
-                    <i class="fa-solid fa-square-parking"></i>
+                    <img src="./img/icon/square-parking-solid-full.svg" alt="Icône" id="business-time" class="fa-solid">
                     <p>Parking à proximité</p>
                 </article>
             </div>
@@ -92,7 +94,7 @@
                     <p>Découvrez cette opportunité unique au sein d’un immeuble moderne polyvalent, qui combine à la fois des espaces de bureaux et des logements. Idéalement situé en face de la cité administrative, cet emplacement stratégique vous assure une visibilité optimale pour votre entreprise.</p>
                     <p>Les bureaux, situés aux 1er et 2ème étages et accessibles par un ascenseur, offrent un environnement de travail agréable avec une abondance de lumière naturelle et des installations pratiques. De plus, des terrasses sont disponibles pour vous permettre de vous détendre ou d’échanger en plein air.</p>
                     <p id="p_fin">Nous vous proposons des surfaces flexibles de 800 m² et 200 m², parfaitement adaptées aux besoins de divers projets professionnels. Pour obtenir plus d’informations ou organiser une visite, n’hésitez pas à nous contacter. C’est une opportunité à ne pas manquer !</p>
-                    <a href="#" class="BackgroundBlanc2Gris Bleu2Noir">En savoir plus sur les bureaux de Meaux</a>
+                    <a href="#" class="BackgroundBlanc2Bleu Bleu2Blanc Scale">En savoir plus sur les bureaux de Meaux</a>
                 </div>
             </div>
         </section>
@@ -115,7 +117,7 @@
                         <p>Lot C : 184 m²</p>
                     </article>
                 </div>
-                <a href="#" class="BackgroundBleu2Noir Blanc2Gris">Voir tout les bureaux</a>
+                <a href="#" class="BackgroundBleu2Blanc Blanc2Bleu Scale">Voir tout les bureaux</a>
             </div>
         </section>
 
@@ -132,10 +134,10 @@
                         <input type="text" placeholder="Votre téléphone" id="telephone">
                         <textarea name="textarea" id="textarea" rows="5"></textarea>
                     </div>
-                    <input type="checkbox"><label for="checkbox">En remplissant ce formulaire, je consens à ce que les informations que j'ai fournies soient envoyées par e-mail exclusivement à Foncière Pagerie Malmaison, destinataire unique, dans le but d'être contacté au sujet de ma demande. Je suis conscient(e) que j'ai le droit de modifier, d'accéder et de supprimer mes informations personnelles.</label>
+                    <input type="checkbox" id="checkbox"><label for="checkbox">En remplissant ce formulaire, je consens à ce que les informations que j'ai fournies soient envoyées par e-mail exclusivement à Foncière Pagerie Malmaison, destinataire unique, dans le but d'être contacté au sujet de ma demande. Je suis conscient(e) que j'ai le droit de modifier, d'accéder et de supprimer mes informations personnelles.</label>
                 </form>
                 
-                <button class="BackgroundBlanc2Gris Bleu2Noir">Envoyer</button>
+                <button class="BackgroundBlanc2Bleu Bleu2Blanc Scale">Envoyer</button>
             </div>
         </section>
 

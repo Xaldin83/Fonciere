@@ -53,6 +53,12 @@ input:focus, textarea:focus{
     color: var(--bleu);
 }
 
+/* Scale */
+
+.Scale:hover{
+    transform: scale(1.1);
+}
+
 /* Classe pour la couleur de texte */
 
 .Noir2Bleu{
@@ -61,36 +67,57 @@ input:focus, textarea:focus{
         color: var(--bleu);
     }
 }
-.Bleu2Noir{
+.Bleu2Blanc{
     color: var(--bleu);
     &:hover{
-        color: var(--noir);
+        color: var(--blanc);
     }
 }
 
-.Blanc2Gris{
+.Blanc2Bleu{
     color: var(--blanc);
     &:hover{
-        color: var(--gris);
+        color: var(--bleu);
+    }
+}
+
+.Noir2Blanc{
+    color: var(--noir);
+    &:hover{
+        color: var(--blanc);
     }
 }
 
 /* Classe pour les backgrounds */
 
-.BackgroundBlanc2Gris{
+
+.BackgroundBlanc2Bleu{
     background-color: var(--blanc);
     &:hover{
-        background-color: var(--gris);
-        transform: scale(1.1);
+        background-color: var(--bleu);
     }
 }
 
-.BackgroundBleu2Noir{
+.BackgroundBlanc2Bleu{
+    background-color: var(--blanc);
+    border: 1px solid var(--bleu);
+    &:hover{
+        background-color: var(--bleu);
+        border:1px solid var(--blanc);
+    }
+}
+
+.BackgroundBleu2Blanc{
+    border: 1px solid var(--bleu);
     background-color: var(--bleu);
     &:hover{
-        background-color: var(--noir);
-        transform: scale(1.1);
+        background-color: var(--blanc);
     }
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Body */
@@ -99,7 +126,7 @@ input:focus, textarea:focus{
 
 header>div{
     max-width: 1440px;
-    padding: 12px;
+    padding-bottom: 6px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -126,17 +153,26 @@ header>div>nav{
 
 header>div>nav>ul{
     list-style-type: none;
-    display: flex;
-    gap: 102px;
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
 }
 
-header>div>nav>ul>li{
+header>div>nav>ul>li>a{
     font-size: 16px;
     text-transform: var(--Uppercase);
     font-weight: var(--W400);
+    padding: 50px 56px;
+
 }
 
 /* Main */
+
+main>#Remonter{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
 
 main>#Section1{
     background-image: url(../img/Locaux/Malmaison.jpg);
@@ -177,12 +213,10 @@ main>#Section1>article>h2{
 }
 
 main>#Section1>article>a{
-    border: 1px solid var(--bleu);
     padding: 13px 24px;
     font-size: 16px;
     font-family: var(--Roboto);
     font-weight: var(--W500);
-    
 }
 
 main>#Section2{
@@ -268,9 +302,11 @@ main>#Section3>div{
     grid-template-columns: repeat(3,1fr);
 }
 
-main>#Section3>div>article>i{
+main>#Section3>div>article>#business-time, main>#Section3>div>article>#location-arrow,
+main>#Section3>div>article>#square-parking{
     width: 50px;
     height: 50px;
+    filter: var(--bleu);
 }
 
 main>#Section3>div>article>p{
@@ -345,7 +381,7 @@ main>#Section4>div>#S4_div_Texte>p{
 }
 
 main>#Section4>div>#S4_div_Texte>a{
-    /* Le margin top ne marche pas. A corriger */
+    max-width: max-content;
     padding: 13px 25px;
     font-size: 16px;
     font-family: var(--OpenSans);
